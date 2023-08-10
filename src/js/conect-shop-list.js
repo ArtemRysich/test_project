@@ -1,9 +1,7 @@
 const wrapEmptyDesc = document.querySelector('.wrap-empty-desc');
 
-const wrapContainerShoppinglist = (document.querySelector(
-  '.wrap-container-shoppinglist'
-).style.display = 'none');
-
+const wrapContainerShoppinglist = document.querySelector('.wrap-container-shoppinglist')
+wrapContainerShoppinglist.style.display = 'none';
 function initLocalStorage() {
   // получаем в перемен данные из localStorage
   let contentLocalStorage = JSON.parse(localStorage.getItem('list'));
